@@ -1,0 +1,531 @@
+html, body {
+	margin: 0;
+	overflow-x: hidden;
+    height: 100%;
+}
+div {
+}
+.fade {
+	z-index: -10;
+	background-color: black;
+	opacity: 1;
+	background-size: cover;
+	background-position: center center;
+	min-height: 750px;
+}
+.arrowdown {
+ 	border: solid white;
+ 	border-width: 0px 2px 2px 0px;
+ 	display: inline-block;
+ 	padding: 6px;
+ 	transform: rotate(45deg);
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+.header {
+	display: grid;
+	align-items: center;
+	height: 50px;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+    z-index: 10;
+}
+.header .text {
+	color: solid black;
+}
+.header-container {
+	position: relative;
+	z-index: 10;
+}
+.header a{
+	display: inline-block;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 13px;
+}
+.header a:hover {
+	color: lightgrey;
+}
+.logo {
+	position: relative;
+	left: 10px;
+	top: 2px;
+}
+.logo2 {
+	position: absolute;
+	left: 17px;
+	top: 13px;
+}
+.header-center {
+	padding-left: 50px;
+	position: center;
+}
+.header-right {
+	padding-right: 47px;
+}
+.slider {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.box {
+	min-height: 50px;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+.footerbackground {
+	position: absolute;
+	bottom: 0;
+	min-height: 82px;
+	min-width: 100%;
+	background-color: white;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 25%;
+	background-color: white;
+	min-height: 82px;
+	min-width: 50%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.footer a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	color: black;
+}
+@media screen and (max-width: 800px) {
+	.boxes {
+		grid-template-columns: 1fr 1fr;
+	}	
+	.footer {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+#slide1 {
+	background-image: url('../img/slider1img1.jpg');
+	background-size: cover;
+	background-position: center center;
+	min-height: 750px;
+	display: inline-block;
+}
+#slide1 .text h1{
+	padding-top: 100px;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+	font-weight: 510;
+}
+#slide1 .button button{
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	border-radius: 25px;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-size: 12px;
+	font-weight: 550;
+	padding-left: 63px;
+	padding-right: 63px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	cursor: pointer;
+}
+#slide1 .button button:hover {
+	background-color: rgb(250, 250, 250);
+}
+#slide2 .text h1{
+	padding-top: 100px;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+	font-weight: 510;
+}
+#slide2 .button button{
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	border-radius: 25px;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-size: 12px;
+	font-weight: 550;
+	padding-left: 63px;
+	padding-right: 63px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	cursor: pointer;
+}
+#slide2 .button button:hover {
+	background-color: rgb(250, 250, 250);
+}
+#slide3 .text h1{
+	padding-top: 100px;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+	font-weight: 510;
+}
+#slide3 .button button{
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	border-radius: 25px;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-size: 12px;
+	font-weight: 550;
+	padding-left: 63px;
+	padding-right: 63px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	cursor: pointer;
+}
+#slide3 .button button:hover {
+	background-color: rgb(250, 250, 250);
+}
+.link {
+	padding-top: 10px;
+	opacity: .85;
+}
+.link a{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 200px;
+}
+.bottomtext {
+	padding-top: 380px;
+}
+.bottomtext p{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 100px;
+	opacity: .8;
+}
+#slide2 {
+	background-image: url('../img/slider1img2.jpg');
+	background-size: cover;
+	background-position: center center;
+	min-height: 750px;
+	display: inline-block;
+}
+#slide3 {
+	background-image: url('../img/slider1img3.jpg');
+	background-size: cover;
+	background-position: center center;
+	min-height: 750px;
+	display: inline-block;
+}
+#page2container {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+#page2 .text {
+	position: absolute;
+	left: 50%;
+	top: 70px;
+	margin-left: -160px;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	font-weight: 510;
+}
+#page2 .button1 button{
+	position: absolute;
+	left: 35%;
+	top: 200px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	border-radius: 25px;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-size: 12px;
+	font-weight: 500;
+	padding-left: 67px;
+	padding-right: 67px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	cursor: pointer;
+}
+#page2 .button1 button:hover {
+	background-color: rgb(250, 250, 250);
+}
+#page2 .button2 button{
+	position: absolute;
+	left: 50%;
+	top: 200px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: transparent;
+	border-radius: 25px;
+	border-color: white;
+	border-style: solid;
+	border-width: 3px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	font-weight: 500;
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+#page2 .button2 button:hover {
+	background-color: white;
+	color: black;
+	}
+#page3 .text {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+}
+#page3 .text h1{
+	position: absolute;
+	left: 50%;
+	top: 70px;
+	margin-left: -180px;
+	font-size: 40px;
+	font-weight: 510;
+}
+#page3 .text h2{
+	position: absolute;
+	left: 50%;
+	top: 150px;
+	margin-left: -80px;
+	font-size: 17px;
+	font-weight: 400;
+	opacity: .9;
+}
+#page3 .button1 button{
+	position: absolute;
+	left: 35%;
+	top: 210px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	border-radius: 25px;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-size: 12px;
+	font-weight: 500;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	cursor: pointer;
+}
+#page3 .button1 button:hover {
+	background-color: rgb(250, 250, 250);
+}
+#page3 .button2 button{
+	position: absolute;
+	left: 50%;
+	top: 210px;
+	margin-left: 10px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: transparent;
+	border-radius: 25px;
+	border-color: white;
+	border-style: solid;
+	border-width: 3px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	font-weight: 500;
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+#page3 .button2 button:hover {
+	background-color: white;
+	color: black;
+	}
+#page4 .text {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 70px;
+	margin-left: -170px;
+	font-size: 25px;
+	font-weight: 510;
+}
+#page4 .button1 button{
+	position: absolute;
+	left: 43%;
+	top: 210px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	border-radius: 25px;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-size: 12px;
+	font-weight: 500;
+	padding-left: 65px;
+	padding-right: 65px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	cursor: pointer;
+}
+#page4 .button1 button:hover {
+	background-color: rgb(250, 250, 250);
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    width: 200px;
+    margin-top: -50px;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+    background: white;
+}
+.sidebarMenuInner{
+    margin: 10px;
+    padding: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    padding-top: 25px;
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sidebarMenuInner a:hover{
+	color: black;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 20px;
+    right: 18px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 2px;
+    width: 85%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+    background-color: black;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+    background-color: black;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -7px;
+    background-color: black;
+}
+#page2video{
+	min-height: 740px;
+	max-width: 100%;	
+}
+#page3video{
+	min-height: 740px;
+	max-width: 100%;
+}
+#page4video{
+	min-height: 670px;
+	max-width: 100%;
+}
